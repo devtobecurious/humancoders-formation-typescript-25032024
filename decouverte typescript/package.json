@@ -1,0 +1,17 @@
+{
+  "name": "decouverte-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "alias": "echo 'ah que coucou'",
+    "tsc:init": "tsc --init",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.4.3"
+  }
+}
