@@ -11,6 +11,10 @@ class Character {
 
 }
 
-export class Mandragor {}
+// export class Mandragor {}
+
+export interface Mandragor { // 80% de votre code, voire 100% : utilisation des interfaces + objets literaux
+    label: string;
+}
 
 export default Character;

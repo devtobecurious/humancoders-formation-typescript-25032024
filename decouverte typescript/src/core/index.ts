@@ -1,0 +1,1 @@
+export type SurnameJedi = 'Anakin' | 'Luke' | 'Leia';

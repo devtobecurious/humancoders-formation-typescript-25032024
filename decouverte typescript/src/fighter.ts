@@ -16,4 +16,12 @@ interface Fighter {
     lifePoints: number;
 }
 
+export interface IBelieveICanFly {
+    fly(): void;
+}
+
+export interface FighterWithDefense extends Fighter, IBelieveICanFly {
+    defense(): void;
+}
+
 export default Fighter;

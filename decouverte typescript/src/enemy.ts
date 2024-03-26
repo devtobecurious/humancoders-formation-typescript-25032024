@@ -1,14 +1,19 @@
+import {SurnameJedi} from './core'
+
 export class State {
     public label ='';
 }
 
+
+
 export class Enemy {
-    private surname : string;
+    private surname : SurnameJedi;
     private power !: number; //je prends la responsabilité de ne pas controler à la compilation si undefined potentiel    // size: number | undefined;// à préférer ;
     size ?: number;
     state2 ?: State;
 
-    constructor(surname: string, public lifePoints: number, public state: State) {
+
+    constructor(surname: SurnameJedi, public lifePoints: number, public state: State) {
         this.surname = surname;
     }
 
