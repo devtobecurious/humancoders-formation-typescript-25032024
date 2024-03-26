@@ -20,6 +20,19 @@ export class Player {
         this.games.push(game);
     }
 
+    get successGames(): Game[] {
+        return this.games.filter(item => item.isWinner);
+    }
+
+    get looserGames(): Game[] {
+        return this.games.filter(item => item.isLooser);
+    }
+
+    get groupedGames() {
+        return this.games;
+        // Object.groupBy 
+    }
+
     get id(): number {
         return this._id;
     }
