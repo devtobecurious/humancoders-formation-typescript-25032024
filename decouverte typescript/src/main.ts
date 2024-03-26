@@ -30,6 +30,15 @@ type WithPointT = {
     point: number
 }
 
+type WithPointWithPower = WithPointT & {
+    power: number
+}
+
+const pointBis: WithPointWithPower = {
+    point: 12,
+    power: 20
+}
+
 // function afficherLife({point}: { point: number }): void { //https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 //     console.info(point);
 // }
